@@ -54,6 +54,6 @@ spec:
     - -terminationMessagePath=$(params.CONTEXT)/image-digested
   - name: digest-to-results
     workingDir: $(workspaces.source.path)
-    image: stedolan/jq
+    image: jqlang/jq
     script: |
       cat $(params.CONTEXT)/image-digested | jq '.[0].value' -rj | tee /tekton/results/IMAGE-DIGEST
