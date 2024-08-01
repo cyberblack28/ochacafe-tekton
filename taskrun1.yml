@@ -1,0 +1,13 @@
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  name: git-clone-run
+spec:
+  workspaces:
+    - name: output
+      emptyDir: {}
+  params:
+    - name: url
+      value: https://github.com/FY0323/tekton-test.git
+  taskRef:
+    name: git-clone

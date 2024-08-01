@@ -1,0 +1,12 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: git-resource
+  namespace: default
+spec:
+  type: git
+  params:
+    - name: url
+      value: https://github.com/FY0323/tekton-test.git
+    - name: revision
+      value: master
