@@ -7,13 +7,13 @@ spec:
     name: build-and-push-pipeline
   params:
     - name: gitUrl
-      value: https://github.com/FY0323/tekton-test.git
+      value: https://github.com/cyberblack28/ochacafe-tekton.git
     - name: pathToContext
       value: .
     - name: pathToYamlFile
       value: "test-app.yml"
     - name: imageUrl
-      value: fy0323/tekton-test
+      value: cyberblack/ochacafe-tekton
     - name: imageTag
       value: "1"
   serviceAccountName: pipeline-account
