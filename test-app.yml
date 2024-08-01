@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app-test
-        image: fy0323/tekton-test:1
+        image: cyberblack/ochacafe-tekton:1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -28,7 +28,7 @@ metadata:
 spec:
   selector:
     app: test
-  type: NodePort
+  type: LoadBalancer
   ports:
   - protocol: TCP
     targetPort: 8080
