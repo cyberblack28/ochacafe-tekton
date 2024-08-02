@@ -1,4 +1,0 @@
-# secret
-bin/
-/docker-secret.yml
-/tekton-pvc.yml
