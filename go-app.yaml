@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ochacafe
-        image: cyberblack/ochacafe-tekton
+        image: cyberblack/ochacafe-tekton:1
 ---
 apiVersion: v1
 kind: Service
