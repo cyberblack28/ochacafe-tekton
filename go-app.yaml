@@ -14,12 +14,17 @@ spec:
     spec:
       containers:
       - name: ochacafe
-        image: cyberblack/ochacafe-tekton:1
+        image: icn.ocir.io/orasejapan/oracleidentitycloudservice/yutaka.ichikawa@oracle.com/ochacafe-rhos:1
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: go-app-service
+  name: go-app-servicei
+  annotations:
+    oci.oraclecloud.com/load-balancer-type: "lb"
+    service.beta.kubernetes.io/oci-load-balancer-shape: "flexible"
+    service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "10"
+    service.beta.kubernetes.io/oci-load-balancer-shape-flex-max: "30"
 spec:
   type: LoadBalancer
   ports:
