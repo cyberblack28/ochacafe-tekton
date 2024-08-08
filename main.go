@@ -6,7 +6,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "Last OCI & Red Hat OpenShift !!")
+        fmt.Fprintf(w, "Tekton OCI & Red Hat OpenShift !!")
 }
 
 func main() {
