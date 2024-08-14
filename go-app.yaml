@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ochacafe
-        image: icn.ocir.io/orasejapan/ochacafe-rhos:1
+        image: icn.ocir.io/orasejapan/ochacafe-rhos:latest
         imagePullPolicy: Always
 ---
 apiVersion: v1
